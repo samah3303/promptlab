@@ -1,0 +1,26 @@
+[
+  {
+    "name": "RAG Q&A with Context",
+    "description": "Answer a question using only the provided context (retrieved documents).",
+    "category": "rag_qa",
+    "prompt": "Answer the question based ONLY on the provided context. If the context doesn't contain the answer, say \"I don't have enough information to answer this question.\" Do not make up information.\n\nContext:\n{{context}}\n\nQuestion: {{question}}\n\nAnswer:",
+    "variables": ["context", "question"],
+    "tags": ["rag", "qa", "retrieval", "grounded"]
+  },
+  {
+    "name": "Multi-Document Synthesis",
+    "description": "Synthesize information from multiple retrieved documents.",
+    "category": "rag_qa",
+    "prompt": "Synthesize the information from the following documents to answer the question. Cite the document number [Doc N] for each piece of information used. If documents contradict each other, note the contradiction.\n\nDocuments:\n{{documents}}\n\nQuestion: {{question}}\n\nSynthesized Answer:",
+    "variables": ["documents", "question"],
+    "tags": ["rag", "synthesis", "multi-document"]
+  },
+  {
+    "name": "Source-Grounded Summary",
+    "description": "Summarize retrieved documents with inline citations.",
+    "category": "rag_qa",
+    "prompt": "Create a concise summary of the key information in the provided documents. Include inline citations like [1], [2] for each claim. Focus on factual accuracy — do not add interpretation.\n\nDocuments:\n{{documents}}\n\nSummary:",
+    "variables": ["documents"],
+    "tags": ["rag", "summary", "citations"]
+  }
+]

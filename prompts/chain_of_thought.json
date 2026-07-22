@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Chain-of-Thought Solver",
+    "description": "Solve complex problems step by step using chain-of-thought reasoning.",
+    "category": "chain_of_thought",
+    "prompt": "Solve the following problem using step-by-step reasoning. Think through each step carefully before giving the final answer.\n\nProblem: {{problem}}\n\nLet's think through this step by step:\n\nStep 1:",
+    "variables": ["problem"],
+    "tags": ["cot", "reasoning", "problem-solving"]
+  },
+  {
+    "name": "Self-Consistency CoT",
+    "description": "Generate multiple reasoning paths and select the most consistent answer.",
+    "category": "chain_of_thought",
+    "prompt": "Solve the following problem using three different approaches. For each approach, show your reasoning step by step. Then compare the answers from all three approaches and select the most consistent result.\n\nProblem: {{problem}}\n\nApproach 1:\n---\nApproach 2:\n---\nApproach 3:\n---\nFinal Answer (most consistent):",
+    "variables": ["problem"],
+    "tags": ["cot", "self-consistency", "reasoning"]
+  },
+  {
+    "name": "Tree-of-Thought Explorer",
+    "description": "Explore multiple solution branches and evaluate each before converging.",
+    "category": "chain_of_thought",
+    "prompt": "Solve the following problem by exploring multiple possible paths. For each path:\n- Describe the approach\n- Evaluate its feasibility (score 1-10)\n- Note potential pitfalls\n\nThen select the best path and execute it fully.\n\nProblem: {{problem}}\n\nPath Exploration:\n1.",
+    "variables": ["problem"],
+    "tags": ["cot", "tree-of-thought", "exploration"]
+  }
+]

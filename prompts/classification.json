@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sentiment Classifier",
+    "description": "Classify text sentiment with explanation and confidence.",
+    "category": "classification",
+    "prompt": "Classify the sentiment of the following text. Choose exactly one: Positive, Negative, Neutral, or Mixed. Provide a brief explanation and a confidence score (0.0–1.0).\n\nText: {{text}}\n\n{\n  \"sentiment\": \"\",\n  \"explanation\": \"\",\n  \"confidence\": 0.0\n}",
+    "variables": ["text"],
+    "tags": ["classification", "sentiment", "nlp"]
+  },
+  {
+    "name": "Topic Categorizer",
+    "description": "Assign one or more topic categories from a predefined list.",
+    "category": "classification",
+    "prompt": "Categorize the following text into one or more of these categories: {{categories}}\n\nReturn a JSON array of matching categories, with a relevance score (0.0–1.0) for each match. If no category fits, return an empty array.\n\nText: {{text}}\n\nOutput:",
+    "variables": ["categories", "text"],
+    "tags": ["classification", "topics", "categorization"]
+  },
+  {
+    "name": "Intent Detector",
+    "description": "Detect user intent from a message (support, purchase, complaint, inquiry).",
+    "category": "classification",
+    "prompt": "Analyze the following user message and determine their primary intent. Choose from: support_request, purchase_intent, complaint, general_inquiry, feedback, or other. Provide a brief justification.\n\nMessage: {{message}}\n\n{\n  \"intent\": \"\",\n  \"justification\": \"\"\n}",
+    "variables": ["message"],
+    "tags": ["classification", "intent", "customer-service"]
+  }
+]

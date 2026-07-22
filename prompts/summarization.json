@@ -1,0 +1,26 @@
+[
+  {
+    "name": "TL;DR Summarizer",
+    "description": "Condense long articles into concise 3-bullet summaries. Great for news articles, reports, or emails.",
+    "category": "summarization",
+    "prompt": "Summarize the following text in exactly 3 bullet points. Each bullet should be one concise sentence covering the most important takeaway.\n\nText:\n{{text}}\n\nSummary:",
+    "variables": ["text"],
+    "tags": ["summarization", "tldr", "bullet-points"]
+  },
+  {
+    "name": "Executive Summary",
+    "description": "Generate a professional executive summary from a longer document.",
+    "category": "summarization",
+    "prompt": "You are an executive assistant. Read the document below and produce a one-paragraph executive summary suitable for a C-level audience. Focus on key findings, financial implications, and recommended next steps.\n\nDocument:\n{{document}}\n\nExecutive Summary:",
+    "variables": ["document"],
+    "tags": ["summarization", "executive", "business"]
+  },
+  {
+    "name": "Meeting Minutes to Summary",
+    "description": "Turn raw meeting transcripts into clean summary notes.",
+    "category": "summarization",
+    "prompt": "Convert the following meeting transcript into organized meeting minutes. Include: (1) Attendees mentioned, (2) Key decisions made, (3) Action items with owners, (4) Next meeting date if mentioned. Be concise.\n\nTranscript:\n{{transcript}}\n\nMeeting Minutes:",
+    "variables": ["transcript"],
+    "tags": ["summarization", "meeting", "notes"]
+  }
+]

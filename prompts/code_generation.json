@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Function Generator",
+    "description": "Generate a well-documented function from a natural language description. Supports Python, JavaScript, and more.",
+    "category": "code_generation",
+    "prompt": "Write a {{language}} function that does the following:\n{{description}}\n\nRequirements:\n- Include type hints (if supported by the language)\n- Include a docstring explaining parameters, return value, and usage example\n- Handle edge cases and errors gracefully\n- Write clean, production-quality code\n\nFunction:",
+    "variables": ["language", "description"],
+    "tags": ["code", "function", "generation"]
+  },
+  {
+    "name": "Bug Fixer",
+    "description": "Analyze a code snippet and error to suggest a fix.",
+    "category": "code_generation",
+    "prompt": "Analyze the following code and the error it produces. Identify the root cause and provide the corrected code with an explanation.\n\nLanguage: {{language}}\n\nCode:\n```{{language}}\n{{code}}\n```\n\nError:\n```\n{{error}}\n```\n\nFix:",
+    "variables": ["language", "code", "error"],
+    "tags": ["code", "debugging", "bug-fix"]
+  },
+  {
+    "name": "Code Review",
+    "description": "Get a thorough code review with suggestions for improvement.",
+    "category": "code_generation",
+    "prompt": "Perform a thorough code review of the following {{language}} code. Evaluate it on:\n1. Correctness — does it work as intended?\n2. Performance — any bottlenecks?\n3. Security — any vulnerabilities?\n4. Readability — is it self-documenting?\n5. Best practices — does it follow idiomatic {{language}} conventions?\n\nFor each issue found, provide the line reference, severity (critical/high/medium/low), and a suggested fix.\n\nCode:\n```{{language}}\n{{code}}\n```\n\nReview:",
+    "variables": ["language", "code"],
+    "tags": ["code", "review", "quality"]
+  }
+]

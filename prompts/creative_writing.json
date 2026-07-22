@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Story Starter",
+    "description": "Generate a creative story opening from a premise, genre, and tone.",
+    "category": "creative_writing",
+    "prompt": "Write the opening paragraph(s) of a {{genre}} story based on the following premise. Match the specified tone. Hook the reader immediately.\n\nPremise: {{premise}}\nGenre: {{genre}}\nTone: {{tone}}\n\nOpening:",
+    "variables": ["premise", "genre", "tone"],
+    "tags": ["creative", "story", "fiction"]
+  },
+  {
+    "name": "Poetry Composer",
+    "description": "Compose a poem in a specified style and form.",
+    "category": "creative_writing",
+    "prompt": "Compose a {{form}} in the style of {{style}} about: {{topic}}\n\nThe poem should evoke {{mood}} emotions. Pay attention to rhythm, imagery, and language.\n\nPoem:",
+    "variables": ["form", "style", "topic", "mood"],
+    "tags": ["creative", "poetry", "artistic"]
+  },
+  {
+    "name": "Dialogue Writer",
+    "description": "Write realistic dialogue between characters with given traits.",
+    "category": "creative_writing",
+    "prompt": "Write a dialogue scene between {{character_a}} and {{character_b}}. They are in {{setting}} discussing {{topic}}. \n\nCharacter A traits: {{traits_a}}\nCharacter B traits: {{traits_b}}\n\nMake the dialogue natural and reveal character through subtext. Show, don't tell.\n\nDialogue:",
+    "variables": ["character_a", "character_b", "setting", "topic", "traits_a", "traits_b"],
+    "tags": ["creative", "dialogue", "characters"]
+  }
+]

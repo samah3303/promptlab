@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Few-Shot Classifier",
+    "description": "Classify with examples — provide a few labeled examples before the input.",
+    "category": "few_shot",
+    "prompt": "Classify the following {{item_type}} into one of these categories: {{categories}}\n\nExamples:\n{{examples}}\n\nNow classify:\n{{input}}\n\nCategory:",
+    "variables": ["item_type", "categories", "examples", "input"],
+    "tags": ["few-shot", "classification", "examples"]
+  },
+  {
+    "name": "Few-Shot Translator",
+    "description": "Translate with style guidance using example translations.",
+    "category": "few_shot",
+    "prompt": "Translate the following from {{source_lang}} to {{target_lang}}. Match the style and tone shown in the examples.\n\nExamples:\n{{examples}}\n\nTranslate:\n{{text}}\n\nTranslation:",
+    "variables": ["source_lang", "target_lang", "examples", "text"],
+    "tags": ["few-shot", "translation", "localization"]
+  },
+  {
+    "name": "Few-Shot Code Generator",
+    "description": "Generate code in a specific style by showing examples of the desired output.",
+    "category": "few_shot",
+    "prompt": "Write {{language}} code following the exact style and conventions shown in the examples.\n\nExamples:\n{{examples}}\n\nNow write code for:\n{{task}}\n\nCode:",
+    "variables": ["language", "examples", "task"],
+    "tags": ["few-shot", "code", "generation"]
+  }
+]
